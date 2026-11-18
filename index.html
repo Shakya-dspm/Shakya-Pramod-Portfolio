@@ -4,12 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b09">
+    <meta name="description" content="Shakya — Student Developer. Building digital experiences through code.">
     <title>Shakya — Student Developer</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="/assets/img/image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <!-- Navigation Bar -->
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#top" class="brand" aria-label="Shakya Home">
+                <span class="brand-mark">{S}</span>
+                <span class="brand-copy">
+                    <strong>SHAKYA</strong>
+                    <small>STUDENT DEVELOPER</small>
+                </span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#journey">Journey</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme"
+                    title="Switch color theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="3.8"></circle>
+                        <path
+                            d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42">
+                        </path>
+                    </svg>
+                </button>
+                <a class="button button-small button-primary nav-cta" href="#contact">Let's talk <span
+                        aria-hidden="true">↗</span></a>
+                <button class="menu-toggle icon-button" id="menuToggle" type="button" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
     <main>
         <section class="skills-section section-pad" id="skills">
             <div class="container">
