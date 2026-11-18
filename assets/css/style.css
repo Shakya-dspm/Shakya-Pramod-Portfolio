@@ -175,3 +175,114 @@ h2 {
   margin-left: 8px;
 }
 
+.hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 48px;
+    min-height: 570px;
+}
+
+.hero-copy {
+    padding: 20px 0 10px;
+}
+
+.availability {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 13px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--panel);
+    color: var(--accent);
+    font: 9px var(--font-mono);
+    letter-spacing: .07em;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+}
+
+.hero-eyebrow {
+    margin: 34px 0 19px;
+    color: var(--muted);
+}
+
+.hero-eyebrow span {
+    color: var(--accent);
+    margin-inline: 5px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(48px, 5.45vw, 76px);
+    font-weight: 600;
+    line-height: .99;
+    letter-spacing: -.075em;
+}
+
+.hero h1 .accent-text {
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.hero-description {
+    max-width: 510px;
+    margin: 28px 0 28px;
+    color: var(--text-soft);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 36px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 36px;
+    padding: 0 11px 0 7px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--text-soft);
+    font-size: 10px;
+    transition: border .2s, color .2s;
+}
+
+.social-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.social-icon {
+    display: grid;
+    place-items: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: var(--panel-2);
+    color: var(--accent);
+    font: 9px var(--font-mono);
+}
+
+.external-arrow {
+    color: var(--muted-2);
+}
